@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,33 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+html {
+  /* formats rem-sizing */
+  font-size: 62.5%;
+  /* adds scroll bar even on pages that can't scroll */
+  overflow-y: scroll;
+}
+
+body {
+  /* removes default whitespace */
+  margin: 0;
+}
+
+html, body {
+  /* prevents horizontal scrolling */
+  overflow-x: hidden;
+}
+
+#root {
+  border: 3px groove red;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
 }
