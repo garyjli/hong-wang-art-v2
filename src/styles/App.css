@@ -1,0 +1,8 @@
+.page-container {
+  /* border: 3px groove transparent; */
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
