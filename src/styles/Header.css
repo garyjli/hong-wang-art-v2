@@ -1,5 +1,4 @@
 .logo {
-  /* border: 1px solid transparent; */
   display: flex;
   justify-content: center;
   padding: 0;
@@ -21,17 +20,15 @@
   font-weight: 300;
   padding: 0;
   margin: 0;
-  /* transition for when you hover the mouse over */
-  transition: opacity ease 250ms;
-  animation: logoAnimation 1s ease-out forwards;
+  transition: transform 0.2s ease;
+  /* animation: logoAnimation 1s ease-out forwards; */
 }
 
 .logo h3:hover {
-  opacity: 0.4;
+  transform: scale(1.05);
 }
 
 .menu {
-  /* border: 1px solid transparent; */
   padding: 0;
   margin: 0;
 }
@@ -39,11 +36,21 @@
 .home-favicon-img {
   width: 2rem;
   height: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.home-favicon-img:hover {
+  transform: scale(1.2);
 }
 
 .cart-favicon-img {
   width: 2rem;
   height: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.cart-favicon-img:hover {
+  transform: scale(1.2);
 }
 
 .menu .nav-links {
@@ -62,12 +69,13 @@
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   margin: 0 3rem;
-  animation: logoAnimation 1s ease-out forwards;
+  transition: transform 0.2s ease, color 250ms ease;
+  /* animation: logoAnimation 1s ease-out forwards; */
 }
 
 .menu .nav-links a:hover {
-  transition: color ease 250ms;
   color: lightskyblue;
+  transform: scale(1.1);
 }
 
 /* @keyframes logoAnimation {

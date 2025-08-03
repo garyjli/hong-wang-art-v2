@@ -1,6 +1,9 @@
 import './styles/Header.css'
+
 import HomeIcon from './assets/home.svg'
 import CartIcon from './assets/cart.svg'
+
+import { Link } from 'react-router-dom';
 
 function Header() {
   return(
@@ -14,19 +17,23 @@ function Header() {
         <nav>
           <ul className="nav-links">
             <li>
-              <a href=""><img className="home-favicon-img" src={HomeIcon}/></a>
+              <Link to="/">
+                <img className="home-favicon-img" src={HomeIcon}/>
+              </Link>
             </li>
             <li>
-              <a href="" style={{ color: 'lightskyblue', textDecoration: 'underline' }}>featured</a>
+              <Link to="/">featured</Link>
             </li>
             <li>
-              <a href="">gallery</a>
+              <Link to="/gallery">gallery</Link>
             </li>
             <li>
-              <a href="">info</a>
+              <Link to="/info">info</Link>
             </li>
             <li>
-              <a href=""><img className="cart-favicon-img" src={CartIcon}/></a>
+              <Link to="/">
+                <img className="cart-favicon-img" src={CartIcon}/>
+              </Link>
             </li>
           </ul>
         </nav>
