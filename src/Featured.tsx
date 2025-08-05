@@ -1,6 +1,6 @@
 import './styles/Featured.css'
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react'
 
 function Featured() {
   // intialize a reference
